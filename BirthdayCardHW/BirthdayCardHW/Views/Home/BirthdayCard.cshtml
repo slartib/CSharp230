@@ -1,0 +1,33 @@
+﻿@model BirthdayCardHW.Models.BirthdayCardModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Birthday Card</title>
+</head>
+<body>
+  <div class="jumbotron" style="background-color: black; color: lightgray">
+    <h3>Birthday Card Sent</h3>
+  </div>
+  <div style="color: grey">
+    <h1>Send a Birthday Card</h1>
+  </div>
+
+     <p>
+      <label>From: @Model.From</label>
+    </p>
+    <p>
+      <label>To: @Model.To</label>
+    </p>
+    <p>
+      <label>Message: @Model.Message</label>
+    </p>
+
+</body>
+</html>
